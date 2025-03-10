@@ -1,0 +1,90 @@
+/* Estils generals */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Capçalera */
+.header {
+    background-color: #F5EEF5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    color: #00796B;
+    font-size: 24px;
+}
+
+/* Seccions generals */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+/* Fons de seccions */
+.sleepiest { background-color: #FAF5F3; }
+.ulesson { background-color: #F2F9F8; }
+.genesis { background-color: #E3F2FD; }
+
+/* Peu de pàgina */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
